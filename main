@@ -34,7 +34,6 @@ if game.GameId == 578392296 then
     if game.PlaceId ~= 5411459567 then
         notify("Joining AFK World, please")
         serverHop()
-        setfpscap(10)
         game:GetService('TeleportService'):Teleport(5411459567)
     end
 
@@ -46,11 +45,11 @@ if game.GameId == 578392296 then
     end
 
     if timerCheck() <= _G.MinTimer then
-        notify("เวลาน้อยกว่า150ออนเซิฟนี้ ")
+        notify("ออนเซิฟนี้ ")
         repeat
             task.wait()
         until timerCheck() > _G.MinTimer
-        notify("เวลามากกว่า150หาเซิฟ")
+        notify("หาเซิฟ")
         task.wait(1)
         serverHop() 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/server", true))()
