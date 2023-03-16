@@ -51,7 +51,7 @@ if game.GameId == 578392296 then
         until timerCheck() > _G.MinTimer
         notify("Server Hopping")
         task.wait(1)
-        serverHop()
+        serverHop() 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/server", true))()
     else
         notify("Server Hopping")
