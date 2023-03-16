@@ -9,11 +9,11 @@ if game.PlaceId == 5411459567 then
         task.wait(1)
     until game.Workspace.Message
 end
-_G.MinTimer = 60
+_G.MinTimer = 150
 
 local function notify(text)
     game.StarterGui:SetCore("SendNotification", {
-        Title = "RZiln's AFK hop",
+        Title = "DEVIL's AFK hop",
         Duration = 60,
         Text = text
     })
@@ -25,7 +25,7 @@ local function serverHop()
             'loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/main", true))()')
     else
         queue_on_teleport(
-            'loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/main.lua", true))()')
+            'loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/main", true))()')
     end
 
 end
@@ -52,11 +52,11 @@ if game.GameId == 578392296 then
         notify("Server Hopping")
         task.wait(1)
         serverHop()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/main", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/server", true))()
     else
         notify("Server Hopping")
         serverHop()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/server", true))()
     end
 
 end
