@@ -22,10 +22,10 @@ end
 local function serverHop()
     if syn then
         syn.queue_on_teleport(
-            'loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/main.lua", true))()')
+            'loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/main", true))()')
     else
         queue_on_teleport(
-            'loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/main.lua", true))()')
+            'loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/main", true))()')
     end
 
 end
