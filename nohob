@@ -47,3 +47,4 @@ if game.GameId == 578392296 then
      notify("Waiting for reward")
         repeat
             task.wait()
+     end
