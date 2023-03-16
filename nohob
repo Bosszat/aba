@@ -43,3 +43,7 @@ if game.GameId == 578392296 then
         local time = tonumber(timer[1])
         return time
     end
+    
+     notify("Waiting for reward")
+        repeat
+            task.wait()
