@@ -20,7 +20,6 @@ end
 if game.GameId == 578392296 then
     if game.PlaceId ~= 5411459567 then
         notify("Joining AFK World, please")
-        serverHop()
         game:GetService('TeleportService'):Teleport(5411459567)
     end
      notify("Waiting for reward")
