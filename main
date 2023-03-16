@@ -9,7 +9,7 @@ if game.PlaceId == 5411459567 then
         task.wait(1)
     until game.Workspace.Message
 end
-_G.MinTimer = 130
+_G.MinTimer = 200
 
 local function notify(text)
     game.StarterGui:SetCore("SendNotification", {
@@ -37,7 +37,7 @@ if game.GameId == 578392296 then
         game:GetService('TeleportService'):Teleport(5411459567)
     end
 
-    notify("AFK Hop running")
+    notify("AFK ")
     local function timerCheck()
         local timer = game.Workspace.Message.Text:split(" ")
         local time = tonumber(timer[1])
@@ -45,11 +45,11 @@ if game.GameId == 578392296 then
     end
 
     if timerCheck() <= _G.MinTimer then
-        notify("Waiting for reward")
+        notify("เวลาน้อยกว่า200ออนเซิฟนี้ ")
         repeat
             task.wait()
         until timerCheck() > _G.MinTimer
-        notify("Server Hopping")
+        notify("เวลามากกว่า200หาเซิฟ")
         task.wait(1)
         serverHop() 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/server", true))()
