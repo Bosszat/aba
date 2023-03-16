@@ -47,12 +47,12 @@ if game.GameId == 578392296 then
 
     if timerCheck() <= _G.MinTimer then
         setfpscap(10)
-        notify("เวลาน้อยกว่า200ออนเซิฟนี้ ")
+        notify("เวลาน้อยกว่า150ออนเซิฟนี้ ")
         repeat
             task.wait()
         until timerCheck() > _G.MinTimer
         setfpscap(10)
-        notify("เวลามากกว่า200หาเซิฟ")
+        notify("เวลามากกว่า150หาเซิฟ")
         task.wait(1)
         serverHop() 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Bosszat/aba/main/server", true))()
