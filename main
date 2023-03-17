@@ -9,7 +9,7 @@ if game.PlaceId == 5411459567 then
         task.wait(1)
     until game.Workspace.Message
 end
-_G.MinTimer = 200
+_G.MinTimer = 290
 
 local function notify(text)
     game.StarterGui:SetCore("SendNotification", {
@@ -45,16 +45,12 @@ if game.GameId == 578392296 then
     end
 
     if timerCheck() <= _G.MinTimer then
-        notify("Waiting for reward")
         repeat
             task.wait()
         until timerCheck() > _G.MinTimer
-        notify("Server Hopping")
-        task.wait(1)
         serverHop()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
     else
-        notify("Server Hopping")
         serverHop()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
     end
