@@ -5,7 +5,7 @@ game:GetService("RunService"):Set3dRenderingEnabled(false)
 setfpscap(10)
 local afk = 5411459567
 local PlaceId = game.PlaceId
-if PlaceId == 5411459567 then
+if PlaceId == afk then
 game:GetService("Players").LocalPlayer.Idled:connect(function()
 game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 wait(1)
