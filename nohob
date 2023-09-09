@@ -2,7 +2,7 @@ repeat
     wait()
 until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(false)
-setfpscap(15)
+setfpscap(5)
 local afk = 5411459567
 local PlaceId = game.PlaceId
 if PlaceId == afk then
