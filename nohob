@@ -7,11 +7,13 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local RAMAccount = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ben10u/Roblox-Account-Manager/main/RAMAccount.lua"))()
 local Account = RAMAccount.new(LocalPlayer.Name)
-local gold = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text
-local level = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel2.Text
+
 local afk = 5411459567
 local PlaceId = game.PlaceId
+while wait(2) do
 if PlaceId == afk then
+local gold = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text
+local level = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel2.Text
 Account:SetAlias(level)
 Account:SetDescription(gold)
 game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -25,4 +27,6 @@ print(TP)
 else
 game:GetService("TeleportService"):Teleport(afk, game:GetService("Players").LocalPlayer)
 print(TP)
+end
+
 end
