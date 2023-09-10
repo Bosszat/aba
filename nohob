@@ -10,7 +10,6 @@ local Account = RAMAccount.new(LocalPlayer.Name)
 
 local afk = 5411459567
 local PlaceId = game.PlaceId
-while wait(2) do
 if PlaceId == afk then
 local gold = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text
 local level = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel2.Text
@@ -29,4 +28,3 @@ game:GetService("TeleportService"):Teleport(afk, game:GetService("Players").Loca
 print(TP)
 end
 
-end
