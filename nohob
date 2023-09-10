@@ -11,6 +11,7 @@ local gold = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabe
 local level = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel2.Text
 local afk = 5411459567
 local PlaceId = game.PlaceId
+while wait(2) do
 if PlaceId == afk then
 Account:SetAlias(level)
 Account:SetDescription(gold)
@@ -25,4 +26,6 @@ print(TP)
 else
 game:GetService("TeleportService"):Teleport(afk, game:GetService("Players").LocalPlayer)
 print(TP)
+end
+
 end
