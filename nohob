@@ -1,5 +1,5 @@
 repeat
-    wait()
+    wait(3)
 until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(false)
 setfpscap(8)
