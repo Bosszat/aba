@@ -1,8 +1,4 @@
-repeat
-    wait()
-until game.Loaded
-game:GetService("RunService"):Set3dRenderingEnabled(false)
-setfpscap(5)
+
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local RAMAccount = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ben10u/Roblox-Account-Manager/main/RAMAccount.lua"))()
@@ -12,6 +8,11 @@ local afk = 5411459567
 local PlaceId = game.PlaceId
  wait(3)
 if PlaceId == afk then
+repeat
+    wait()
+until game.Loaded
+game:GetService("RunService"):Set3dRenderingEnabled(false)
+setfpscap(5)
 local gold = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text
 local level = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel2.Text
 Account:SetAlias(level)
