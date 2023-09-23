@@ -9,7 +9,7 @@ local PlaceId = game.PlaceId
  wait(3)
 if PlaceId == afk then
 
-setfpscap(5)
+setfpscap(15)
 local gold = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel.Text
 local level = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TextLabel2.Text
 Account:SetAlias(level)
